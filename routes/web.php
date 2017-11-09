@@ -15,10 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/register', function () {
-    return view('register');
-});
-
-Route::post('/register', function () {
-    return view('register');
+Route::group([ 'prefix' => 'register' ], function () {
+    Route::get('/', 'ViewRegistration');
+    Route::post('/', 'ProcessRegistration');
 });
