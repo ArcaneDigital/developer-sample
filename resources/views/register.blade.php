@@ -18,51 +18,51 @@
         <form action="/register">
             <div class="input-container">
                 <label for="email">Email:</label>
-                <input id="email" type="email" name="email" required />
+                <input id="email" title="Email" type="email" name="email" required />
             </div>
             <div class="input-container">
                 <label for="createPassword">Create Password:</label>
-                <input id="createPassword" type="password" name="createPassword" required />
+                <input id="createPassword" title="Create Password" type="password" name="createPassword" required />
             </div>
             <div class="input-container">
                 <label for="confirmPassword">Confirm Password:</label>
-                <input id="confirmPassword" type="password" name="confirmPassword" required />
+                <input id="confirmPassword" title="Confirm Password" type="password" name="confirmPassword" required />
             </div>
             <div class="input-container">
                 <label for="firstName">First Name:</label>
-                <input id="firstName" type="text" name="firstName" required />
+                <input id="firstName" title="First Name" type="text" name="firstName" required />
             </div>
             <div class="input-container">
                 <label for="lastName">Last Name:</label>
-                <input id="lastName" type="text" name="lastName" required />
+                <input id="lastName" title="Last Name" type="text" name="lastName" required />
             </div>
             <div class="input-container">
                 <label for="birthDay">Birth Day:</label>
-                <input id="birthDay" type="number" name="birthDay" required />
+                <input id="birthDay" title="Birth Day" type="number" name="birthDay" required />
             </div>
             <div class="input-container">
                 <label for="birthMonth">Birth Month:</label>
-                <input id="birthMonth" type="number" name="birthMonth" required />
+                <input id="birthMonth" title="Birth Month" type="number" name="birthMonth" required />
             </div>
             <div class="input-container">
                 <label for="birthYear">Birth Year:</label>
-                <input id="birthYear" type="number" name="birthYear" required />
+                <input id="birthYear" title="Birth Year" type="number" name="birthYear" required />
             </div>
             <div class="input-container">
                 <label for="phone">Phone Number:</label>
-                <input id="phone" type="tel" name="phone" required />
+                <input id="phone" title="Phone Number" type="tel" name="phone" required />
             </div>
             <div class="input-container">
                 <label for="address">Address:</label>
-                <input id="address" type="text" name="address" required />
+                <input id="address" title="Address" type="text" name="address" required />
             </div>
             <div class="input-container">
                 <label for="city">City:</label>
-                <input id="city" type="text" name="city" required />
+                <input id="city" title="City" type="text" name="city" required />
             </div>
             <div class="input-container">
                 <label for="province">Province:</label>
-                <select id="province" name="province" required>
+                <select id="province" title="Province" name="province" required>
                     <option value="" selected disabled>Select Province</option>
                     @foreach (__('form.province.options') as $option)
                         <option value="{!! $option['value'] !!}">{!! $option['name'] !!}</option>
@@ -71,10 +71,10 @@
             </div>
             <div class="input-container">
                 <label for="postalCode">Postal Code:</label>
-                <input id="postalCode" type="text" name="postalCode" required />
+                <input id="postalCode" title="Postal Code" type="text" name="postalCode" required />
             </div>
             <div class="input-container checkbox">
-                <input id="confirmInfo" type="checkbox" name="confirmInfo" required />
+                <input id="confirmInfo" title="Information Confirmation" type="checkbox" name="confirmInfo" required />
                 <label for="confirmInfo">I confirm that all of my information is correct</label>
             </div>
             <div class="input-container checkbox">
