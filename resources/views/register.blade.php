@@ -15,7 +15,7 @@
     </div>
 
     <div class="form panel">
-        <form action="/register">
+        <form action="/register" method="post">
             <div class="input-container">
                 <label for="email">Email:</label>
                 <input id="email" title="Email" type="email" name="email" required />
